@@ -1,0 +1,16 @@
+p {
+  font-family: Lato;
+}
+
+ul {
+  list-style-type: none;
+  display: inline-flex;
+}
+
+li {
+  margin-right: 20px;
+}
+li a {
+  text-decoration: none;
+  font-size: 20px;
+}
