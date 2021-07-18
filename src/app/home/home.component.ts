@@ -57,4 +57,8 @@ export class HomeComponent implements OnInit {
   constructor() {}
 
   ngOnInit() {}
+
+  strigifyObject(item) {
+    return JSON.stringify(item);
+  }
 }

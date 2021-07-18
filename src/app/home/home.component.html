@@ -7,6 +7,7 @@
     <td>{{product.year}}</td>
     <td>{{product.color}}</td>
     <td>{{product.pantone_value}}</td>
-    <td><a routerLink="/product/{{product.id}}">Details</a></td>
+    <!-- <td><a routerLink="/product/{{product.id+'/'+product.name}}">Details</a></td> -->
+    <td><a routerLink="/product/{{strigifyObject(product)}}">Details</a></td>
   </tr>
 </table>

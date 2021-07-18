@@ -8,9 +8,15 @@ import { ActivatedRoute } from '@angular/router';
 })
 export class DetailsComponent implements OnInit {
   productId: number;
+  productName: any;
   constructor(private activatedRoute: ActivatedRoute) {}
 
   ngOnInit() {
     this.productId = this.activatedRoute.snapshot.params['id'];
+    this.productName = this.activatedRoute.snapshot.params['name'];
+    console.log(
+      'his.activatedRoute.snapshot.params',
+      JSON.stringify(this.activatedRoute.snapshot.params['detail'])
+    );
   }
 }
